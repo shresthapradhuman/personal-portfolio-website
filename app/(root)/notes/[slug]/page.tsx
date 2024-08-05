@@ -56,7 +56,7 @@ const NotePage = ({
                 Back to the notes
               </Link>
             </div>
-            <div className="prose max-w-xl">
+            <div className="prose max-w-xl dark:prose-invert">
               <Markdown>{note.content}</Markdown>
             </div>
           </div>
