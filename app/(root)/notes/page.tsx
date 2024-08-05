@@ -13,7 +13,7 @@ interface Note {
   slug: string;
 }
 
-const NotesPage = async ({
+const NotesPage = ({
   searchParams,
 }: {
   searchParams: {
@@ -21,7 +21,7 @@ const NotesPage = async ({
     keyword: string;
   };
 }) => {
-  const notes = (await getNotesMetaData()) as Note[];
+  const notes = getNotesMetaData() as Note[];
   const categoriesData = notes.map((note) => note.category);
   const categories = Array.from(new Set(categoriesData.flat()));
   let filterNotes: Note[] = [];

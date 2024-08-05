@@ -3,7 +3,8 @@ import matter from "gray-matter";
 import path from "path";
 
 const getRecentNotes = () => {
-  const files = fs.readdirSync(path.join("./content"));
+  const notesDirectory = path.join(process.cwd(), "content");
+  const files = fs.readdirSync(notesDirectory);
   const markdownFiles = files.filter((file) => file.endsWith(".md"));
   const notes = markdownFiles.map((file) => {
     /** create slug */
