@@ -26,7 +26,7 @@ const NotePage = ({
   return (
     <div className="flex items-center justify-center">
       <div className="md:max-w-3xl w-full">
-        <div className="py-10 px-4">
+        <div className="py-10 px-4 md:px-0">
           <Link
             href={"/notes"}
             className="flex text-primary items-center text-sm mb-4 md:hidden"

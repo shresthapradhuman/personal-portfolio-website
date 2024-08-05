@@ -41,19 +41,12 @@ const NotesPage = ({
   return (
     <div className="flex items-center justify-center">
       <div className="md:max-w-3xl w-full py-8">
-        <div className="flex gap-x-5 px-4">
-          <div className="w-full max-w-[180px] md:block hidden">
-            <h1 className="text-2xl mt-1">Categories</h1>
-            <hr className="mt-3 mb-5" />
+        <div className="flex gap-x-10 px-4 md:px-0">
+          <div className="w-full max-w-[220px] md:block hidden">
             <NotesCategories data={categories} />
           </div>
           <div>
-            <div className="flex items-center justify-between">
-              <h1 className="text-2xl">All Notes</h1>
-              <SearchForm />
-            </div>
-            <hr className="mt-2 mb-4" />
-            <ul className="flex flex-col gap-10">
+            <ul className="flex flex-col gap-10 ">
               {notes &&
                 filterNotes.map((note) => (
                   <li key={note.slug}>

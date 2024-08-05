@@ -8,8 +8,8 @@ const NotesCategories = ({ data }: { data: string[] }) => {
   const searchParams = useSearchParams();
   const activeCategory = searchParams.get("category");
   return (
-    <ul className="flex flex-col gap-2">
-      <li className="w-full">
+    <ul className="flex flex-col gap-2 bg-muted p-4 rounded-md">
+      <li className="w-full mb-3">
         <Link
           href={`/notes`}
           className={cn("flex uppercase hover:text-primary", {
@@ -20,7 +20,7 @@ const NotesCategories = ({ data }: { data: string[] }) => {
         </Link>
       </li>
       {data.map((category, index) => (
-        <li key={index} className="w-full">
+        <li key={index} className="w-full pl-4 mb-2">
           <Link
             href={`/notes?category=${category}`}
             className={cn("flex uppercase hover:text-primary", {

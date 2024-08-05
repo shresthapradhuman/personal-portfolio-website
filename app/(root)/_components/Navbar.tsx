@@ -26,7 +26,7 @@ const Navbar = () => {
   const isActive = pathname.replace("/", "").split("/")[0];
 
   return (
-    <header className="sticky top-0 w-full h-16 bg-background flex items-center justify-center">
+    <header className="w-full h-16 bg-background flex items-center justify-center">
       <nav className="md:max-w-3xl w-full flex items-center px-4 md:px-0">
         <div className="block md:hidden">
           <MobileMenu />
