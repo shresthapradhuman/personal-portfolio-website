@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-const getNotesMetaData = () => {
+const getNotesMetaData = async () => {
   const files = fs.readdirSync(path.join("./content"));
   const markdownFiles = files.filter((file) => file.endsWith(".md"));
   const notes = markdownFiles.map((file) => {

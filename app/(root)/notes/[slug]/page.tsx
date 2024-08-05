@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import { ArrowLeftIcon } from "lucide-react";
 
-const getPostContent = (slug: string) => {
+const getPostContent = async (slug: string) => {
   const content = fs.readFileSync(
     path.join("./content", `${slug}.md`),
     "utf-8"
@@ -15,14 +15,14 @@ const getPostContent = (slug: string) => {
   return note;
 };
 
-const NotePage = ({
+const NotePage = async ({
   params,
 }: {
   params: {
     slug: string;
   };
 }) => {
-  const note = getPostContent(params.slug);
+  const note = await getPostContent(params.slug);
   return (
     <div className="flex items-center justify-center">
       <div className="md:max-w-3xl w-full">
