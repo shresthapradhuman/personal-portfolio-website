@@ -20,7 +20,7 @@ const NotesCategories = ({ data }: { data: string[] }) => {
         </Link>
       </li>
       {data.map((category, index) => (
-        <li key={index} className="w-full pl-4 mb-2">
+        <li key={index} className="w-full mb-2">
           <Link
             href={`/notes?category=${category}`}
             className={cn("flex uppercase hover:text-primary", {
