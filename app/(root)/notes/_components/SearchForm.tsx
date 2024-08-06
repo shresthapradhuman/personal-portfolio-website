@@ -32,13 +32,12 @@ const SearchForm = () => {
   }, [keyword, updateQuery]);
 
   return (
-    <div className="relative w-2/3">
+    <div className="relative w-full">
       <Input
         placeholder="Search Notes..."
         value={keyword}
         onChange={(e) => setKeyword(e.target.value)}
       />
-      <SearchIcon className="absolute top-1/2 right-3 transform -translate-y-1/2" />
     </div>
   );
 };
