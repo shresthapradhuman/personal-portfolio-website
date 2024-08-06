@@ -33,7 +33,7 @@ const NavbarSearch = ({ data }: { data: Note[] }) => {
           <SearchIcon className="w-[1.25rem] h-[1.25rem]" />
         </Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="max-w-sm md:max-w-md">
         <DialogTitle />
         <DialogDescription />
         <Command>
