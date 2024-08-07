@@ -1,38 +1,35 @@
 ---
-title: "How to Build a Dark Mode and Light Mode Switch in JavaScript in Under 10 Minutes"
+title: "Build a Dark/Light Mode Switch in JavaScript in 10 Minutes"
 date: "7 Apr, 2023"
-excerpt: "Axios is powerful and easy-to-use tool for managing HTTP requests in your web app."
-cover_image: "/images/posts/dark-mode-light-mode.webp"
-category: ["Html", "CSS", "JavaScript"]
+excerpt: "
+Learn how to quickly build a dark/light mode switch in JavaScript. This 10-minute guide covers the essentials for creating a seamless mode toggle in your web applications."
 ---
 
-Dark mode and light mode have become a popular feature in web design. It's a great way to enhance user experience and reduce eye strain. In this tutorial, we'll learn how to build a dark mode and light mode switch in JavaScript in under 10 minutes.
+Dark mode and light mode have become essential features in modern web design. They enhance user experience and reduce eye strain. In this tutorial, we'll show you how to implement a dark mode and light mode switch in JavaScript in just 10 minutes.
 
-## Prerequisites
+### Prerequisites
 
-Before we get started, make sure you have the following:
+Before we dive in, ensure you have:
 
-* Basic knowledge of HTML, CSS, and JavaScript
-* A code editor like Visual Studio Code or Sublime Text
+- Basic knowledge of HTML, CSS, and JavaScript
+- A code editor such as Visual Studio Code or Sublime Text
 
-## Getting Started
+### Step 1: HTML Markup
 
-Step 1: HTML Markup
-
-First, we need to create the HTML markup for our dark mode and light mode switch. We'll use a simple switch button that toggles between the two modes.
+Start by creating the HTML structure for our dark mode/light mode switch. We'll use a simple checkbox to toggle between the two modes.
 
 ```html
 <div class="switch">
-  <input type="checkbox" id="toggle" class="toggle">
+  <input type="checkbox" id="toggle" class="toggle" />
   <label for="toggle"></label>
 </div>
 ```
 
-We have created a div element with a class of switch that will contain our switch button. We have also added an input element with a type of checkbox and an ID of toggle. Finally, we have added a label element with a for attribute that matches the ID of our input element.
+Here, we have a div with a class of switch that holds our toggle button. The input element is a checkbox with an ID of toggle, and the label element associates with this checkbox via the for attribute.
 
-Step 2: CSS Styling
+### Step 2: CSS Styling
 
-Next, we need to style our switch button. We'll use CSS to make it look like a switch.
+Next, we style the switch button with CSS to make it look like a toggle switch.
 
 ```css
 .switch {
@@ -72,7 +69,7 @@ Next, we need to style our switch button. We'll use CSS to make it look like a s
 }
 
 .switch input:checked + label {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .switch input:checked + label::before {
@@ -80,45 +77,33 @@ Next, we need to style our switch button. We'll use CSS to make it look like a s
 }
 ```
 
-We have created a class called switch that sets the position, display, width, and height of our switch button. We have also added some styles to the input element to make it invisible.
+In this CSS, the switch class sets up the size and positioning of our switch. We make the checkbox invisible and style the label to look like a switch. The ::before pseudo-element creates the sliding effect, and the input:checked + label selectors handle the switch's visual changes when toggled.
 
-We have then added styles to our label element to make it look like a switch button. We have set its position to absolute and given it a background color and border radius. We have also added a transition effect to change the background color when the button is toggled.
+### Step 3: JavaScript Logic
 
-We have also added a ::before pseudo-element to create a white circle that represents the switch button. We have set its position to absolute and given it a background color and border radius. We have also added a transition effect to move the switch button when the button is toggled.
-
-Finally, we have added some styles to our input:checked + label and input:checked + label::before selectors to change the background color and position of our switch button when it is toggled.
-
-Step 3: JavaScript Logic
-
-Finally, we need to add some JavaScript to our HTML markup to toggle between dark mode and light mode.
+Now, add JavaScript to handle the theme switching.
 
 ```javascript
-
-const toggleSwitch = document.querySelector('.toggle');
-const body = document.querySelector('body');
+const toggleSwitch = document.querySelector(".toggle");
+const body = document.querySelector("body");
 
 function switchTheme(e) {
-    if (e.target.checked) {
-        body.classList.replace('light', 'dark');
-    } else {
-        body.classList.replace('dark', 'light');
-    }    
+  if (e.target.checked) {
+    body.classList.replace("light", "dark");
+  } else {
+    body.classList.replace("dark", "light");
+  }
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
-
+toggleSwitch.addEventListener("change", switchTheme, false);
 ```
 
-We have created a variable called toggleSwitch that stores the input element with the class of .toggle. We have also created a variable called body that stores the body element of our HTML markup.
+We select the toggle switch and body elements. The switchTheme function checks if the switch is on or off and updates the body class accordingly. We then attach an event listener to the toggle switch to call switchTheme when the switch is changed.
 
-We have then created a function called switchTheme that takes an event object as an argument. Inside the function, we use an if statement to check if the toggle switch is checked. If it is checked, we replace the light class of the body element with the dark class. If it is not checked, we replace the dark class of the body element with the light class.
+### Step 4: Testing
 
-Finally, we have added an event listener to our toggleSwitch element that listens for the change event and calls our switchTheme function when the toggle switch is toggled.
+Open your HTML file in a web browser to test the dark/light mode switch. Toggle the switch to see the background color change between light and dark modes.
 
-Step 4: Testing
+### Conclusion
 
-We have now completed our dark mode and light mode switch in JavaScript. To test it, simply open your HTML file in a web browser and toggle the switch button. You should see the background color of your web page change between light and dark mode.
-
-Conclusion
-
-In this tutorial, we learned how to build a dark mode and light mode switch in JavaScript in under 10 minutes. We used HTML to create the markup, CSS to style the switch button, and JavaScript to toggle between dark mode and light mode. This is a great feature to enhance user experience and reduce eye strain.
+In this quick tutorial, we built a dark mode/light mode switch using HTML, CSS, and JavaScript. This feature improves user experience and reduces eye strain, making your web applications more user-friendly.

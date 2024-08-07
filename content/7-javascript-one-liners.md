@@ -1,9 +1,7 @@
 ---
-title: "7 JavaScript One-Liners"
+title: "7 Essential JavaScript One-Liners Every Developer Should Know"
 date: "15 Feb, 2022"
-excerpt: "JavaScript is the backbone of Web Development. So, today I will share 7 One-Liners of JavaScript."
-cover_image: "/images/posts/7javascriptoneliner.webp"
-category: ["JavaScript"]
+excerpt: "Explore 7 essential JavaScript one-liners that every developer should know. Boost your coding efficiency with these powerful, concise snippets for common tasks and challenges."
 ---
 
 ## As Everyone know that JavaScript is the backbone of Web Development. <br> So, today I will share 7 One-Liners of JavaScript.

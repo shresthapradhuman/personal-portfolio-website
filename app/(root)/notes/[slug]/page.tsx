@@ -35,9 +35,7 @@ const NotePage = ({
         </Link>
         <div className="px-4 md:px-0">
           <h1 className="text-2xl font-bold mb-1">{note.data.title}</h1>
-          <small>
-            {note.data.date} / {note.data.category.join(", ")}
-          </small>
+          <small>{note.data.date}</small>
           <hr className="my-5" />
 
           <div className="prose max-w-3xl w-full dark:prose-invert">

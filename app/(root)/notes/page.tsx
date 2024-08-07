@@ -46,10 +46,10 @@ const NotesPage = ({
                 <li key={note.slug}>
                   <Link href={`/notes/${note.slug}`} className="space-y-2">
                     <h2 className="text-xl font-semibold basis-3/4">
-                      {note.title}...
+                      {note.title}
                     </h2>
                     <small className="text-xs text-muted-foreground font-medium">
-                      {note.date} / {note.category.join(", ")}
+                      {note.date}
                     </small>
                     <p>{note.excerpt} </p>
                   </Link>

@@ -1,9 +1,7 @@
 ---
-title: "3D-Foldable Profile Card Using Html5 & CSS3"
+title: "3D Foldable Profile Card with HTML5 & CSS3"
 date: "27 Apr, 2022"
-excerpt: "This is an 3D Profile Card which is Foldable on Hover"
-cover_image: "/content/profilecard.gif"
-category: ["Html", "CSS"]
+excerpt: "Create a 3D foldable profile card with HTML5 and CSS3 using this easy-to-follow guide. Perfect for web developers looking to add interactive and stylish elements to their designs."
 ---
 
 Today, I'm going to build the Profile Card With 3D Foldable Hover Effect.
