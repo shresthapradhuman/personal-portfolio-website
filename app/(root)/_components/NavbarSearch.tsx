@@ -33,11 +33,11 @@ const NavbarSearch = ({ data }: { data: Note[] }) => {
           <SearchIcon className="w-[1.25rem] h-[1.25rem]" />
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-sm md:max-w-md">
-        <DialogTitle />
+      <DialogContent className="max-w-sm md:max-w-3xl">
+        <DialogTitle>Search Note By Title</DialogTitle>
         <DialogDescription />
         <Command>
-          <CommandInput placeholder="Enter your search title" />
+          <CommandInput placeholder="Enter your search..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
             {data.map((note) => (

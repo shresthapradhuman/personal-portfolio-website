@@ -13,8 +13,8 @@ const shadowsintolight = Rajdhani({
 
 export const menuItems = [
   { title: "Notes", url: "/notes" },
-  // { title: "Projects", url: "/projects" },
-  { title: "Work With Me", url: "/hire" },
+  { title: "Projects", url: "/projects" },
+  // { title: "Work With Me", url: "/hire" },
   { title: "Contact", url: "/contact" },
 ];
 
