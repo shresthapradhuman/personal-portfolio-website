@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import getNotesMetaData from "../../helper/getNotesMetaData";
+import getNotesMetaData from "../helper/getNotesMetaData";
 
 export interface Note {
   title: string;

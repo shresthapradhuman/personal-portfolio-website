@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/providers/theme-provider";
+import Navbar from "./_components/Navbar";
+import Footer from "./_components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,7 +39,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Navbar />
+          <main className="flex-1 flex-grow">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -1,7 +1,6 @@
 import React from "react";
-import getRecentNotes from "../../helper/getRecentNotes";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import getRecentNotes from "../helper/getRecentNotes";
 
 const RecentNotes = () => {
   const recentNotes = getRecentNotes();
