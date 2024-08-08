@@ -54,7 +54,7 @@ const ContactPage = () => {
   };
   return (
     <div className="flex items-center justify-center">
-      <div className="max-w-3xl w-full">
+      <div className="max-w-3xl w-full px-8 md:px-0">
         <div className="py-14 space-y-2">
           <h1 className="text-3xl">Let&apos;s talk about your ideas</h1>
           <p className="text-lg text-muted-foreground">
@@ -67,7 +67,7 @@ const ContactPage = () => {
               onSubmit={form.handleSubmit(onSubmit)}
               className="grid gap-8 mb-10"
             >
-              <div className="grid md:grid-cols-2 gap-10">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-10 ">
                 <FormField
                   name="name"
                   control={form.control}

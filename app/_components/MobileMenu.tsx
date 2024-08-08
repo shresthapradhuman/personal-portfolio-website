@@ -21,6 +21,11 @@ const MobileMenu = () => {
       </SheetTrigger>
       <SheetContent side={"left"} className="w-2/3">
         <ul className="mt-5 space-y-2">
+          <li className="w-full">
+            <Link href={"/"} className="flex hover:bg-muted">
+              <SheetClose className="w-full text-left p-2">Home</SheetClose>
+            </Link>
+          </li>
           {menuItems.map((item, index) => (
             <li key={index} className="w-full">
               <Link href={item.url} className="flex hover:bg-muted">

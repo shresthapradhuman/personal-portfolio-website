@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Book Reading Tracker",
+    "description": "A web application to track reading habits using Next.js, PostgreSQL, and Prisma.",
+    "technologies": [
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Auth v5",
+      "Resend",
+      "React Email"
+    ],
+    "proofLink": "https://booktracker.example.com",
+    "sourceCode": "https://github.com/username/book-reading-tracker"
+  },
+  {
+    "title": "Food Catering Service",
+    "description": "A platform for managing food orders and deliveries for parties and events.",
+    "technologies": ["Vue.js", "Node.js", "Express", "MongoDB"],
+    "proofLink": "https://bhansee.example.com",
+    "sourceCode": "https://github.com/username/food-catering-service"
+  },
+  {
+    "title": "E-commerce Barcode Scanner",
+    "description": "A Vue.js application with barcode scanning functionality for inventory management.",
+    "technologies": ["Vue.js", "JavaScript", "HTML", "CSS"],
+    "proofLink": "https://barcodescanner.example.com",
+    "sourceCode": "https://github.com/username/ecommerce-barcode-scanner"
+  },
+  {
+    "title": "Naturalization Test Prep",
+    "description": "A web application to help users prepare for the Japanese naturalization test.",
+    "technologies": ["React", "Redux", "Firebase"],
+    "proofLink": "https://natestprep.example.com",
+    "sourceCode": "https://github.com/username/naturalization-test-prep"
+  },
+  {
+    "title": "Historical Places Guide",
+    "description": "A website showcasing historical places and sea beaches in Kamakura, Japan.",
+    "technologies": ["Next.js", "Tailwind CSS", "GraphQL"],
+    "proofLink": "https://kamakuraguide.example.com",
+    "sourceCode": "https://github.com/username/historical-places-guide"
+  },
+  {
+    "title": "YouTube Thumbnail Generator",
+    "description": "A tool to create YouTube thumbnails using DALL-E and other image processing techniques.",
+    "technologies": ["Python", "DALL-E", "Flask"],
+    "proofLink": "https://thumbnailgen.example.com",
+    "sourceCode": "https://github.com/username/youtube-thumbnail-generator"
+  },
+  {
+    "title": "Kids eBook Creation",
+    "description": "An application to create and publish children's ebooks with illustrations and interactive elements.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Canvas API"],
+    "proofLink": "https://kidsebook.example.com",
+    "sourceCode": "https://github.com/username/kids-ebook-creation"
+  },
+  {
+    "title": "Printable Activities Marketplace",
+    "description": "A platform to create and sell printable activities, study guides, and language learning resources.",
+    "technologies": ["Shopify", "Liquid", "JavaScript"],
+    "proofLink": "https://printablemarket.example.com",
+    "sourceCode": "https://github.com/username/printable-activities-marketplace"
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "description": "A minimalist personal portfolio website with sections for projects, blog, and contact.",
+    "technologies": ["Next.js", "CSS Modules", "Google Fonts"],
+    "proofLink": "https://portfolio.example.com",
+    "sourceCode": "https://github.com/username/personal-portfolio-website"
+  },
+  {
+    "title": "Microservices Architecture Demo",
+    "description": "A demonstration of microservices architecture using Docker, Nginx, Next.js, and MySQL.",
+    "technologies": ["Docker", "Nginx", "Next.js", "MySQL"],
+    "proofLink": "https://microservicesdemo.example.com",
+    "sourceCode": "https://github.com/username/microservices-architecture-demo"
+  }
+]
