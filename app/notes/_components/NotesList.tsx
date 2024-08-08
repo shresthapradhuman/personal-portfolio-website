@@ -54,7 +54,7 @@ const NotesList = ({ filterNotes }: { filterNotes: Note[] }) => {
           </li>
         ))}
       </ul>
-      <div className="py-4 text-center">
+      <div className="pt-8 text-center">
         {isLoading && hasMore && <p>Loading more notes...</p>}{" "}
         {/* Loading indicator */}
       </div>
