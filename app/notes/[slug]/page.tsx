@@ -24,7 +24,7 @@ const NotePage = ({
 }) => {
   const note = getPostContent(params.slug);
   return (
-    <div className="flex items-center justify-center py-10">
+    <div className="flex items-center justify-center">
       <div className="md:max-w-3xl w-full space-y-8">
         <Link
           href={"/notes"}

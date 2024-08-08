@@ -10,7 +10,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full flex items-center justify-center ">
-      <div className="md:max-w-3xl w-full flex items-center justify-between border-t pb-2 pt-4">
+      <div className="md:max-w-3xl w-full flex-col md:flex-row space-y-2 md:space-y-0 flex items-center justify-between border-t pb-2 pt-4">
         <p>©2024 Pradhuman Shrestha. All rights reserved.</p>
         <ul className="flex items-center space-x-3">
           <li>

@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen grid grid-rows-[auto,1fr,auto] bg-background font-sans antialiased",
           poppins.variable
         )}
       >
@@ -40,7 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex-1 flex-grow">{children}</main>
+          <main>{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
