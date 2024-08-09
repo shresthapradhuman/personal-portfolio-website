@@ -13,7 +13,7 @@ const RecentNotes = () => {
           <li key={note.slug}>
             <Link href={`/notes/${note.slug}`} className="grid gap-2">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <h3 className="md:text-xl text-lg font-semibold">
+                <h3 className="md:text-xl text-lg font-semibold truncate">
                   {note.title}
                 </h3>
                 <small className="text-muted-foreground">{note.date}</small>
