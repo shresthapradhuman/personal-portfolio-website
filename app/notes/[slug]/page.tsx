@@ -25,7 +25,7 @@ const NotePage = ({
   const note = getPostContent(params.slug);
   return (
     <div className="flex items-center justify-center">
-      <div className="md:max-w-3xl w-full space-y-8">
+      <div className="md:max-w-3xl w-full space-y-8 px-4 md:px-0">
         <Link
           href={"/notes"}
           className="flex text-primary items-center text-sm"
@@ -33,7 +33,7 @@ const NotePage = ({
           <ArrowLeftIcon className="h-4 w-4 mr-2" />
           Back to the notes
         </Link>
-        <div className="px-4 md:px-0">
+        <div>
           <h1 className="text-2xl font-bold mb-1">{note.data.title}</h1>
           <small>{note.data.date}</small>
           <hr className="my-5" />
