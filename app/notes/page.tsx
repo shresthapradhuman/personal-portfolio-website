@@ -39,7 +39,7 @@ const NotesPage = ({
   }
   return (
     <div className="flex items-center justify-center">
-      <div className="md:max-w-3xl w-full py-8">
+      <div className="md:max-w-3xl w-full py-10">
         <div className="flex gap-x-10 px-4 md:px-0">
           <NotesList filterNotes={filterNotes} />
         </div>
