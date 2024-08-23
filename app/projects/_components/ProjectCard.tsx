@@ -17,7 +17,9 @@ const ProjectCard = ({
     title: string;
     desc: string;
     techStack: string[];
+    imageUrl: string;
     sourceCode: string;
+    proofLink: string;
   };
 }) => {
   return (
@@ -27,12 +29,12 @@ const ProjectCard = ({
           <Link href={"/"}>{data.title}</Link>
         </CardTitle>
         <Image
-          src={"/zoho-bugtracker-review.jpg"}
+          src={data?.imageUrl || "/projects/tracker.png"}
           alt=""
           width={100}
           height={100}
           priority
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
       </CardHeader>
       <CardContent className="grid gap-3">
@@ -43,7 +45,7 @@ const ProjectCard = ({
         </div>
       </CardContent>
       <CardFooter className="relative w-full flex items-center justify-between">
-        <Link href={data.sourceCode} className="text-primary">
+        <Link href={data.proofLink} className="text-primary">
           Preview Link
         </Link>
         <Link href={data.sourceCode} className="text-primary">

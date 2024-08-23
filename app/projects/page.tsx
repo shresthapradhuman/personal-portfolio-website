@@ -3,7 +3,7 @@ import ProjectCard from "./_components/ProjectCard";
 
 const ideas = [
   {
-    title: "Bug Tracker",
+    title: "Tr-acker",
     desc: "A web application to track reading habits using Next.js, PostgreSQL, and Prisma.",
     techStack: [
       "NextJS",
@@ -16,13 +16,9 @@ const ideas = [
       "Typescript",
       "Shadcn Tailwind UI Library",
     ],
-    sourceCode: "https://github.com/shresthapradhuman/bug-tracker.git",
-  },
-  {
-    title: "YouTube Thumbnail Generator",
-    desc: "A tool to create YouTube thumbnails using DALL-E and other image processing techniques.",
-    techStack: ["Python", "DALL-E", "Flask"],
-    sourceCode: "https://github.com/shresthapradhuman/bug-tracker.git",
+    sourceCode: "https://github.com/shresthapradhuman/tr-acker.git",
+    imageUrl: "/projects/tracker.png",
+    proofLink: "https://tr-acker.vercel.app/",
   },
 ];
 
